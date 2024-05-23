@@ -1,16 +1,6 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenuTrigger,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuItem,
-  DropdownMenuContent,
-  DropdownMenu,
-} from "@/components/ui/dropdown-menu";
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import { fetchNFL } from "@/actions/fetchNFL";
-import { covertISODate } from "@/utils/covertISODate";
+import { convertISODate } from "@/utils/convertISODate";
 import FootBall from "@/assets/FootBallIcon";
 import { Header } from "@/components/Header";
 
@@ -37,7 +27,7 @@ export default async function Component() {
                     </span>
                   </div>
                   <div className="text-gray-500 dark:text-gray-400">
-                    {covertISODate(game.Date)}
+                    {convertISODate(game.Date)}
                   </div>
                 </CardHeader>
                 <CardContent>

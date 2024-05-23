@@ -18,7 +18,7 @@ export const Header = () => {
           <Link className="hover:underline" href="/cricket-series">
             Cricket Series List
           </Link>
-          <Link className="hover:underline" href="#">
+          <Link className="hover:underline" href="/cricket-matches">
             Current Cricket Matches
           </Link>
         </nav>
