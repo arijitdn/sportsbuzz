@@ -15,7 +15,7 @@ const chivo = Chivo({
 });
 
 export const metadata: Metadata = {
-  title: "SportsTracker",
+  title: "SportsBuzz",
   description: "Track scores of sports automatically",
 };
 
