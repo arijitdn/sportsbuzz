@@ -26,8 +26,8 @@ export default async function Component() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* @ts-ignore */}
-            {CricketMatchesData.data.map((game: any) => (
-              <Card>
+            {CricketMatchesData.data.map((game: any, i: any) => (
+              <Card key={i}>
                 <CardHeader>
                   <div className="flex items-center gap-2">
                     <IconCricket />

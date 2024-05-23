@@ -26,8 +26,8 @@ export default async function Component() {
             <h1 className="text-2xl font-bold">NFL Games</h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {NFLData.map((game: any) => (
-              <Card>
+            {NFLData.map((game: any, i: any) => (
+              <Card key={i}>
                 <CardHeader>
                   <div className="flex items-center gap-2">
                     <FootBall />
